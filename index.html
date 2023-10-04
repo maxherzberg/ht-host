@@ -7,8 +7,8 @@
     <body>
         <h1>HT-component</h1>
         <hr>
-        <input type="text" name="User" value="User">User
-        <input type="password" name="Password" value="">Password
+        <input id="user" type="text" name="User" value="User">User
+        <input id="password" type="password" name="Password" value="">Password
         <hr>
         <a href=""></a>
         <hr>
@@ -21,4 +21,14 @@
         </ul>
         <hr>
     </body>
+    <script type="text/javascript">
+        var user = document.getElementById('user').value;
+        var user = document.getElementById('password').value;
+        
+        if(user == "admin" || user == "Admin") {
+            if(password == "admin") {
+                window.location = "user.html";
+            }
+        }
+    </script>
 </html>
